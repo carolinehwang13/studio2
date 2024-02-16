@@ -1,20 +1,78 @@
-#logoBar{
+#logoBar {
   width: 30vw;
   height: 100vh;
 }
-#siteLogo{
+#siteLogo {
   width: 100%;
 }
 body {
   display: flex;
+  background-color: rgb(192, 222, 255);
 }
-#staffGallery{
+#staffGallery {
   width: 70vw;
-  display: inherit;
-
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
 }
-.galleryImage{
+.galleryImage {
   width: 100%;
   height: auto;
   height: 300px;
+}
+h1 {
+  color: purple;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.character {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+@media screen and (orientation: portrait) and (max-width: 600px) {
+  #logoBar {
+    width: 30vw;
+    height: 50vh;
+  }
+  #siteLogo {
+    width: 100%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: rgb(192, 222, 255);
+  }
+  #staffGallery {
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+  }
+  .galleryImage {
+    width: 100%;
+    height: auto;
+    height: 300px;
+  }
+  h1 {
+    color: purple;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  h2 {
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  .character {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
